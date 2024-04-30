@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Form Submission</title>
+</head>
+
+<body>
+  <div class=container>
+    <div class=form>
+      <div class="h1lol">
+        <h1>Verification Form</h1>
+      </div>
+      <form action="/submit" method="POST">
+        <label for="name">Name of Trust:</label>
+        <input type="text" id="name" name="name" required><br>
+        <br>
+        <label for="nameOwner">Name of Owner:</label>
+        <input type="text" id="nameOwner" name="nameOwner" required><br>
+        <br>
+        <label for="AboutTrust">About your Trust:</label><br>
+        <textarea id="AboutTrust" name="AboutTrust" rows="4" cols="50" required></textarea><br>
+        <br>
+        <label for="services">Services provided by Trust:</label><br>
+        <textarea id="services" name="services" rows="4" cols="50" required></textarea><br>
+        <br>
+        <label for="trustno">Your Unique Trust ID:</label>
+        <input type="text" id="trustno" name="trustno" inputmode="numeric" pattern="[0-9]*" required><br>
+        <br>
+        <label for="type">Trust Type:</label>
+        <select id="type" name="type" required>
+          <option value="">Select Trust Type</option>
+          <option value="Orphanage">Orphanage</option>
+          <option value="Women">Women</option>
+          <option value="Children">Children</option>
+          <option value="Elderly">Elderly</option>
+        </select>
+        <br>
+        <br>
+        <label for="fileUpload">Upload trust ownership verification [pdf format]:</label>
+        <input type="file" id="fileUpload" name="fileUpload" accept=".pdf"><br>
+        <br>
+        <label for="fileUpload">Upload trust image [png/jpg format]:</label>
+        <input type="file" id="fileUpload" name="fileUpload" accept=".jpeg, .jpg, .png"><br>
+        <br>
+        <br>
+        <div class="button"><button type="submit">Submit</button></div>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

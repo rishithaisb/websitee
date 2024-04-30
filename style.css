@@ -1,0 +1,45 @@
+body
+{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5c92b98;
+}
+.form
+{
+    border-radius: 20px;
+    box-shadow: 0 0 10px #262626;
+    padding: 30px;
+    display: inline-block;
+    background-color: #262626;
+    text-align: left;
+
+
+}
+
+.container
+{
+    text-align:center;
+    color: #f5c92b;
+    padding:100px;
+
+}
+
+.h1lol
+{
+    text-align: center;
+}
+
+.button{
+    text-align: center;
+}
+
+.button button {
+    border: none;
+    background-color: #f5c92b !important;
+    color:#262626 !important;
+    font-size: large;
+    border-radius: 5px;
+
+}
